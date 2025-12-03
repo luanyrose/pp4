@@ -79,7 +79,7 @@ def load_models():
     
     if food_model is None:  # Só tentar carregar se ainda não foi definido
     # Carregar modelo Food-101
-    if TENSORFLOW_AVAILABLE and tf is not None:
+     if TENSORFLOW_AVAILABLE and tf is not None:
         food_model_path = MODEL_OUTPUT_DIR / "food101_classifier.keras"
         if food_model_path.exists():
             try:
